@@ -1,8 +1,7 @@
 class GameEngine
 
 def random_number
-	number = Random.new
-	number.rand(1..2)
+	rand(1..2) == 1 ? :win : :loose
 end
 
 end

@@ -1,6 +1,9 @@
 require 'sinatra/base'
+require './lib/game_engine.rb'
 
 class Game < Sinatra::Base
+
+	game = GameEngine.new
   
   get '/' do
     erb :play
@@ -12,6 +15,12 @@ class Game < Sinatra::Base
 
   get '/outcome' do
   	erb :outcome
+  	@outcome = game
+  	@outcome == :win ? :win : :loose
+  end
+
+  get'/test' do
+  	erb :test
   end
 
 
