@@ -13,11 +13,18 @@ class Game < Sinatra::Base
   	erb :game
   end
 
-  get '/outcome' do
-  	erb :outcome
-  	@outcome = game
-  	@outcome == :win ? :win : :loose
+   get '/outcome' do
+    @outcome = game
+  	@outcome.random_number == :win ? :win : :loose
+    p @outcome.random_number.inspect
+    erb :win_loose
   end
+
+  # get '/outcome' do
+  # 	erb :outcome
+  	# @outcome = game
+  	# @outcome == :win ? :win : :loose
+  # end
 
   get'/test' do
   	erb :test

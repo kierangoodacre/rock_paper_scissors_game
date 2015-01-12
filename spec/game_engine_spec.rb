@@ -8,4 +8,8 @@ describe GameEngine do
       allow(game).to receive(:random_number).and_return(:win)
     end 
 
+    it "computer should be able to choose rock" do
+      expect(game.rock).to eq :loose
+    end
+
 end
