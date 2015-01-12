@@ -8,8 +8,8 @@ describe GameEngine do
       allow(game).to receive(:random_number).and_return(:win)
     end 
 
-    it "computer should be able to choose rock" do
-      expect(game.rock).to eq :loose
+    it "should be able to choose a weopon" do
+      allow(game).to receive(:computer_outcome).and_return(:scissor)
     end
 
 end

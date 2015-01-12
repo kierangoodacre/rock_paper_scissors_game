@@ -1,17 +1,72 @@
 body {
-	background-color: green
+	background-color: black
 }
 
 .icon_choice {
-	text-align: center;
-	margin: auto;
-	/*margin-left: auto;
-	margin-right: auto;*/
+	position: center
 }
 
-.rock_button {
-	text-align: horizontal;
-	margin-top: 100px;
+.rock_image {
+  float: left;
+  width:  200px;
+  height: 200px;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size:     cover;
+  display: block;
+  margin-left: 150px;
+  margin-top: 150px;
+  opacity: .8;
+}
+
+.scissor_image {
+    float: left;
+    width:  200px;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    display: block;
+  margin-left: 200px;
+  margin-top: 150px;
+  opacity: .8;
+}
+
+.paper_image {
+    float: left;
+    width:  200px;
+    height: 200px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    display: block;
+  margin-left: 200px;
+  margin-top: 150px;
+  opacity: .8;
+}
+
+.main_header {
+	font-family: "Impact Label Reversed";
+	margin-left: 10%;
+	font-size: 100px;
+	color: white;
+	opacity: .8;
+}
+
+.win {
+	font-family: "Impact Label Reversed";
+	font-size: 100px;
+	color: white;
+	margin-left: 30%;
+	margin-top: 20%;
+}
+
+.loose {
+	font-family: "Impact Label Reversed";
+	font-size: 100px;
+	color: white;
+	margin-left: 30%;
+	margin-top: 20%;
 }
 
 
@@ -26,7 +81,7 @@ Developed by DUBHE
 Version: 1.0 - 05/11/2014
 Author: Rafael Zago
 
-*/
+
 
 .button {
     background-color:#bdc3c7;

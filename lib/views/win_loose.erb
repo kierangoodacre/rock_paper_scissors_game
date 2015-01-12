@@ -1,5 +1,8 @@
-<% if @outcome.random_number == :win %>
-	You Win!
-	<% elsif @outcome.random_number == :loose %>
-	You Loose
+<!DOCTYPE html>
+<html>
+	<% if @outcome.random_number == :win %>
+		<h1 class= "win">You Win!</h1>
+		<% elsif @outcome.random_number == :loose %>
+		<h1 class= "loose">You Loose!</h1>
 	<% end %>
+</html>
